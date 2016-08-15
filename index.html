@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Benjamin Lykins</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The online home of Benjamin Lykins. Software Developer
+  and IT Consultant in Raleigh, NC." />
+  <meta name="keywords" content="Benjamin Lykins, Benjamin, Lykins, Software Developer, Raleigh">
+  <meta name="author" content="Benjamin Lykins">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="Media/ic_home_black_24dp_2x.ico" />
+  <!-- Material Design icons-->
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+
+<!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+
+  <style>
+
+    .row-1{
+      background-image: url(./Media/Images/pexels-photo-96426.jpg);
+      background-position: right top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: 0px 5px 18px 1px rgba(41,41,41,0.65);
+    }
+
+    .row-2{
+      background-image: url(Media/Images/apple-iphone-desk-office.jpg);
+      background-position: right top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: 0px 0px 38px 20px rgba(41,41,41,0.65);
+    }
+
+    .row-3{
+      background-image: url(Media/Images/pexels-photo-59672.jpg);
+      background-position: right top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: 0px -5px 18px 1px rgba(41,41,41,0.65);
+    }
+
+    .jumbo-header{
+      font-size: 80px;
+      text-align: center;
+    }
+
+    .text-row {
+      height: 100%;
+    }
+
+    body {
+      font-size: 20px;
+      text-align: justify;
+      text-justify: inter-word;
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+    }
+    a{
+      color: white;
+    }
+    a:hover, a:active, a:focus, a:visited {
+      color: inherit;
+      text-decoration: none;
+    }
+
+
+    .vertical-align {
+      padding: 200px 0px 200px 0px;
+    }
+
+    .custom-navbar {
+      margin: 0px;
+      color: white;
+      box-shadow: none;
+      border: none;
+      width: 100%;
+      background-color: transparent;
+      z-index: 1;
+      position: fixed
+    }
+
+    .navbar-brand {
+      color: white !important;
+      padding-top: 10px;
+    }
+
+    @media screen and (max-width: 768px){
+        .custom-navbar {
+          background-color: white;
+          color: black;
+        }
+        .navbar-right{
+          color: black !important;
+        }
+        .navbar-brand {
+          padding-top: 15px;
+          color: black !important;
+        }
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-default navbar-static-top custom-navbar">
+    <div class="container" style="position: relative">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#meet"><i style="color: inherit !important" class="material-icons">home</i></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a style="color:inherit" href="#meet">Meet Me</a></li>
+          <li><a style="color:inherit" href="#learn">Learn About Me</a></li>
+          <li><a style="color:inherit" href="#contact">Contact Me</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <div class="container-fluid row-1" id="meet">
+    <div class="row vertical-align">
+      <div class="col-md-5 col-md-offset-1 col-sm-12">
+        <div>
+        <h1 class="jumbo-header"> Meet Me </h1>
+
+          <p>
+            Hi.
+          </p>
+          <p>
+            My name is Benjamin Lykins. I am a software developer at heart, with expertise
+            in many differnet areas of technology.
+          </p>
+          <p>
+            My passion is doing what I love to help people and being creative while working
+            with the complexity of modern software development.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid row-2" id="learn">
+    <div class="row vertical-align">
+      <div class="col-md-6 col-md-offset-6 col-xs-12">
+        <div>
+        <h1 class="jumbo-header"> Learn About Me </h1>
+          <p>
+            I am a Student in the Computer Science Department at NC State University and
+            Consultant at Jilasoan.
+          </p>
+          <p>
+            I have academic and professional experience in programming, code analysis,
+            documentation, testing, server management, and virtualization solutions.
+          </p>
+          <p>
+            I always strive to be creative, professional, and efficient, with a focus
+            on creating inventive solutions to problems.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid row-3" id="contact">
+    <div class="row vertical-align">
+      <div class="col-md-5 col-md-offset-4 col-xs-12">
+        <div>
+        <span class="jumbo-header"> Contact Me </span>
+        <br>
+          <p>
+            <a href="mailto:bslykins@ncsu.edu"> Email me </a>
+          </p>
+          <p>
+            <a href="https://www.linkedin.com/in/benjaminlykins" target="_blank"> Find me on LinkedIn </a>
+          </p>
+          <p>
+            <a href="Media/BenjaminLykinsResume.pdf" target="_blank"> Check out my resume </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
