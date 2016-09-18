@@ -30,156 +30,34 @@
 
 
   <script>
-  $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-
-        // Store hash
-        var hash = this.hash;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
-    });
+  // Include the header and footer into content
+  $(function(){
+    $("#header").load("header.html");
+    // $("#footer").load("footer.html");
   });
   </script>
 
-  <style>
+  <link href="style.css" rel="stylesheet">
 
-    .row-1{
-      background-image: url(./Media/Images/pexels-photo-96426.jpg);
-      background-position: right top;
-      background-repeat: no-repeat;
-      background-size: cover;
-      box-shadow: 0px 5px 18px 1px rgba(41,41,41,0.65);
-    }
-
-    .row-2{
-      background-image: url(Media/Images/apple-iphone-desk-office.jpg);
-      background-position: right top;
-      background-repeat: no-repeat;
-      background-size: cover;
-      box-shadow: 0px 0px 38px 20px rgba(41,41,41,0.65);
-    }
-
-    .row-3{
-      background-image: url(Media/Images/pexels-photo-59672.jpg);
-      background-position: right top;
-      background-repeat: no-repeat;
-      background-size: cover;
-      box-shadow: 0px -5px 18px 1px rgba(41,41,41,0.65);
-    }
-
-    .jumbo-header{
-      font-size: 80px;
-      text-align: center;
-    }
-
-    .text-row {
-      height: 100%;
-    }
-
-    body {
-      font-size: 20px;
-      text-align: justify;
-      text-justify: inter-word;
-      color: white;
-      font-family: 'Open Sans', sans-serif;
-    }
-    a{
-      color: white;
-    }
-    a:hover, a:active, a:focus, a:visited {
-      color: inherit;
-      text-decoration: none;
-    }
-
-
-    .vertical-align {
-      padding: 200px 0px 200px 0px;
-    }
-
-    .custom-navbar {
-      margin: 0px;
-      color: white;
-      box-shadow: none;
-      border: none;
-      width: 100%;
-      background-color: transparent;
-      z-index: 1;
-      position: fixed
-    }
-
-    .navbar-brand {
-      color: white !important;
-      padding-top: 10px;
-    }
-
-    @media screen and (max-width: 768px){
-        .custom-navbar {
-          background-color: white;
-          color: black;
-        }
-        .navbar-right{
-          color: black !important;
-        }
-        .navbar-brand {
-          padding-top: 15px;
-          color: black !important;
-        }
-    }
-
-  </style>
 </head>
 <body>
 
-  <nav class="navbar navbar-default navbar-static-top custom-navbar">
-    <div class="container" style="position: relative">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#meet"><i style="color: inherit !important" class="material-icons">home</i></a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a style="color:inherit" href="#meet">Meet Me</a></li>
-          <li><a style="color:inherit" href="#learn">Learn About Me</a></li>
-          <li><a style="color:inherit" href="#contact">Contact Me</a></li>
-        </ul>
-      </div><!--/.nav-collapse -->
-    </div>
-  </nav>
+  <!-- Insert Header -->
+  <div id="header"></div>
 
   <div class="container-fluid row-1" id="meet">
     <div class="row vertical-align">
-      <div class="col-md-5 col-md-offset-1 col-sm-12">
-        <div>
-        <h1 class="jumbo-header"> Meet Me </h1>
-
-          <p>
+      <div class="col-md-6 col-md-offset-1 col-sm-12">
+        <div class="card card-block custom-card">
+        <h1 class="jumbo-header card-title"> Meet Me </h1>
+          <p class="card-text">
             Hi.
           </p>
-          <p>
+          <p class="card-text">
             My name is Benjamin Lykins. I am a software developer at heart, with expertise
             in many differnet areas of technology.
           </p>
-          <p>
+          <p class="card-text">
             My passion is doing what I love to help people and being creative while working
             with the complexity of modern software development.
           </p>
@@ -190,21 +68,23 @@
 
   <div class="container-fluid row-2" id="learn">
     <div class="row vertical-align">
-      <div class="col-md-6 col-md-offset-6 col-xs-12">
+      <div class="col-md-7 col-md-offset-5 col-xs-12">
         <div>
-        <h1 class="jumbo-header"> Learn About Me </h1>
-          <p>
-            I am a Student in the Computer Science Department at NC State University and
-            Consultant at Jilasoan.
-          </p>
-          <p>
-            I have academic and professional experience in programming, code analysis,
-            documentation, testing, server management, and virtualization solutions.
-          </p>
-          <p>
-            I always strive to be creative, professional, and efficient, with a focus
-            on creating inventive solutions to problems.
-          </p>
+          <div class="card card-block custom-card">
+            <h1 class="jumbo-header"> Learn About Me </h1>
+            <p>
+              I am a Student in the Computer Science Department at NC State University and
+              Consultant at Jilasoan.
+            </p>
+            <p>
+              I have academic and professional experience in programming, code analysis,
+              documentation, testing, server management, and virtualization solutions.
+            </p>
+            <p>
+              I always strive to be creative, professional, and efficient, with a focus
+              on creating inventive solutions to problems.
+            </p>
+        </div>
         </div>
       </div>
     </div>
@@ -214,20 +94,22 @@
     <div class="row vertical-align">
       <div class="col-md-5 col-md-offset-4 col-xs-12">
         <div style="text-align: center">
-          <h1 class="jumbo-header"> Contact Me </h1>
-          <br>
-            <p>
-              <a href="mailto:bslykins@ncsu.edu"> &middot; Email me &middot; </a>
-            </p>
-            <p>
-              <a href="https://www.linkedin.com/in/benjaminlykins" target="_blank"> &middot; Find me on LinkedIn &middot; </a>
-            </p>
-            <p>
-              <a href="https://github.com/BenjaminLykins" target="_blank"> &middot; Follow me on GitHub &middot; </a>
-            </p>
-            <p>
-              <a href="Media/Resume.pdf" target="_blank"> &middot; Check out my resume &middot; </a>
-            </p>
+          <div class="card card-block custom-card">
+            <h1 class="jumbo-header"> Contact Me </h1>
+            <br>
+              <p>
+                <a href="mailto:bslykins@ncsu.edu"> &middot; Email me &middot; </a>
+              </p>
+              <p>
+                <a href="https://www.linkedin.com/in/benjaminlykins" target="_blank"> &middot; Find me on LinkedIn &middot; </a>
+              </p>
+              <p>
+                <a href="https://github.com/BenjaminLykins" target="_blank"> &middot; Follow me on GitHub &middot; </a>
+              </p>
+              <p>
+                <a href="Media/Resume.pdf" target="_blank"> &middot; Check out my resume &middot; </a>
+              </p>
+            </div>
         </div>
       </div>
     </div>

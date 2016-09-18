@@ -1,0 +1,121 @@
+
+@darkPrimaryColor:   #0288D1;
+@primaryColor:       #03A9F4;
+@lightPrimaryColor:  #B3E5FC;
+@textPrimaryColor:   #FFFFFF;
+@accentColor:        #536DFE;
+@primaryTextColor:   #212121;
+@secondaryTextColor: #757575;
+@dividerColor:       #BDBDBD;
+
+//Responsive Elements
+
+@media screen and (max-width: 768px){
+    .custom-navbar {
+      background-color: white;
+      color: black;
+    }
+    .navbar-right{
+      color: black !important;
+    }
+    .navbar-brand {
+      padding-top: 15px;
+      color: black !important;
+    }
+}
+
+//Elements
+
+body {
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+  color: @textPrimaryColor;
+  font-family: 'Open Sans', sans-serif;
+}
+a{
+  color: @textPrimaryColor !important;
+}
+
+a:hover{
+  color: @lightPrimaryColor !important;
+  text-decoration: none;
+}
+
+a:active, a:focus, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+//Classes
+
+.custom-card{
+  background-color: white !important;
+  color: @secondaryTextColor;
+  opacity: .9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 35px 50px 35px 50px;
+  h1 {
+    opacity: 1 !important;
+  }
+  p {
+    opacity: 1 !important;
+    a{
+      color: @secondaryTextColor !important;
+    }
+  }
+}
+
+.row-1{
+  background-image: url(Media/Images/pexels-photo-96426.jpg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 5px 18px 1px rgba(41,41,41,0.65);
+}
+
+.row-2{
+  background-image: url(Media/Images/apple-iphone-desk-office.jpg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 38px 20px rgba(41,41,41,0.65);
+}
+
+.row-3{
+  background-image: url(Media/Images/pexels-photo-59672.jpg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px -5px 18px 1px rgba(41,41,41,0.65);
+}
+
+.jumbo-header{
+  font-size: 80px;
+  text-align: center;
+}
+
+.text-row {
+  height: 100%;
+}
+
+
+.vertical-align {
+  padding: 200px 0px 200px 0px;
+}
+
+.custom-navbar {
+  margin: 0px;
+  color: white;
+  box-shadow: none;
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1;
+  position: fixed
+}
+
+.navbar-brand {
+  color: white !important;
+  padding-top: 10px;
+}
