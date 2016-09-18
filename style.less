@@ -12,8 +12,8 @@
 
 @media screen and (max-width: 768px){
     .custom-navbar {
-      background-color: white;
-      color: black;
+      background-color: white !important;
+      color: black !important;
     }
     .navbar-right{
       color: black !important;
@@ -33,9 +33,6 @@ body {
   color: @textPrimaryColor;
   font-family: 'Open Sans', sans-serif;
 }
-a{
-  color: @textPrimaryColor !important;
-}
 
 a:hover{
   color: @lightPrimaryColor !important;
@@ -48,6 +45,21 @@ a:active, a:focus, a:visited {
 }
 
 //Classes
+
+.navbar-nav{
+    li{
+      a{
+        color: @textPrimaryColor !important;
+        font-size: 16px !important;
+        @media (max-width: 768px) {
+          color: @secondaryTextColor !important
+        }
+      }
+      a:hover{
+        color: @lightPrimaryColor !important;
+      }
+    }
+}
 
 .custom-card{
   background-color: white !important;
@@ -62,6 +74,9 @@ a:active, a:focus, a:visited {
     opacity: 1 !important;
     a{
       color: @secondaryTextColor !important;
+    }
+    a:hover{
+      color:@lightPrimaryColor !important;
     }
   }
 }

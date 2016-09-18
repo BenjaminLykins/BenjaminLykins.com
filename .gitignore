@@ -1,0 +1,6 @@
+#dsStore
+.DS_Store
+Media/.DS_Store
+
+#Firebase
+firebase-debug.log
