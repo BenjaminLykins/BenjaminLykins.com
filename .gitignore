@@ -3,4 +3,4 @@
 Media/.DS_Store
 
 #Firebase
-firebase-debug.log
+*.log
