@@ -1,9 +1,9 @@
 
-@darkPrimaryColor:   #0288D1;
-@primaryColor:       #03A9F4;
-@lightPrimaryColor:  #B3E5FC;
-@textPrimaryColor:   #FFFFFF;
-@accentColor:        #536DFE;
+@darkPrimaryColor:   #616161;
+@primaryColor:       #9E9E9E;
+@lightPrimaryColor:  #F5F5F5;
+@textPrimaryColor:   #212121;
+@accentColor:        #607D8B;
 @primaryTextColor:   #212121;
 @secondaryTextColor: #757575;
 @dividerColor:       #BDBDBD;
@@ -30,7 +30,7 @@ body {
   font-size: 20px;
   text-align: justify;
   text-justify: inter-word;
-  color: @textPrimaryColor;
+  color: @lightPrimaryColor;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -45,18 +45,17 @@ a:active, a:focus, a:visited {
 }
 
 //Classes
-
 .navbar-nav{
     li{
       a{
-        color: @textPrimaryColor !important;
+        color: @lightPrimaryColor !important;
         font-size: 16px !important;
         @media (max-width: 768px) {
           color: @secondaryTextColor !important
         }
       }
       a:hover{
-        color: @lightPrimaryColor !important;
+        color: white !important;
       }
     }
 }
@@ -83,10 +82,18 @@ a:active, a:focus, a:visited {
 
 .row-1{
   background-image: url(Media/Images/pexels-photo-96426.jpg);
+  height:100vh;
   background-position: right top;
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0px 5px 18px 1px rgba(41,41,41,0.65);
+}
+
+.row-body{
+  font-family: 'David Libre', serif;
+  padding: 50px;
+  color: black !important;
+  box-shadow: 0px 0px 38px 20px rgba(41,41,41,0.65);
 }
 
 .row-2{
@@ -105,18 +112,30 @@ a:active, a:focus, a:visited {
   box-shadow: 0px -5px 18px 1px rgba(41,41,41,0.65);
 }
 
+ .hr-custom
+ {
+   border: 0;
+   height: 3px;
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+ }
+
 .jumbo-header{
   font-size: 80px;
   text-align: center;
 }
 
-.text-row {
-  height: 100%;
-}
-
-
 .vertical-align {
   padding: 200px 0px 200px 0px;
+}
+
+.footer {
+  padding: 50px;
+  font-family: 'David Libre', serif;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: 0px -5px 18px 1px rgba(41,41,41,0.65);
+  background-color: #FAFAFA;
+  color: #B0B0B0;
 }
 
 .custom-navbar {
