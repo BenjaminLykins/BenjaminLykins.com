@@ -6,9 +6,28 @@
     "public": ".",
     "rewrites": [
       {
-        "source": "**",
+        "source": "/",
         "destination": "/index.html"
+      },
+      {
+        "source": "/home",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/about",
+        "destination": "/pages/about.html"
+      },
+      {
+        "source": "/projects",
+        "destination": "/pages/projects.html"
       }
-    ]
+    ],
+    "ignore": [
+      "firebase.json",
+      ".git",
+      ".gitignore",
+      "package.json"
+    ],
+    "cleanUrls": true,
   }
 }

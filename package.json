@@ -1,0 +1,8 @@
+{
+  "name": "benjaminlykins.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenjaminLykins/BenjaminLykins.com.git"
+  },
+  "author": "Benjamin Lykins <benjaminstedman@gmail.com> (https://benjaminlykins.com)"
+}
