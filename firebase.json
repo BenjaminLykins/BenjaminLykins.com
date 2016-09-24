@@ -15,11 +15,11 @@
       },
       {
         "source": "/about",
-        "destination": "/pages/about.html"
+        "destination": "/about.html"
       },
       {
         "source": "/projects",
-        "destination": "/pages/projects.html"
+        "destination": "/projects.html"
       }
     ],
     "ignore": [
@@ -28,6 +28,6 @@
       ".gitignore",
       "package.json"
     ],
-    "cleanUrls": true,
+    "cleanUrls": true
   }
 }

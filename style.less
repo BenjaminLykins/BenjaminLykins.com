@@ -73,26 +73,6 @@ a:active, a:focus, a:visited {
     }
 }
 
-.custom-card{
-  background-color: white !important;
-  color: @secondaryTextColor;
-  opacity: .9;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 35px 50px 35px 50px;
-  h1 {
-    opacity: 1 !important;
-  }
-  p {
-    opacity: 1 !important;
-    a{
-      color: @secondaryTextColor !important;
-    }
-    a:hover{
-      color:@lightPrimaryColor !important;
-    }
-  }
-}
-
 .row-1{
   background-image: url(media/Images/pexels-photo-96426.jpg);
   min-height:100vh;
@@ -107,14 +87,19 @@ a:active, a:focus, a:visited {
   padding: 50px;
   color: black !important;
   box-shadow: 0px 0px 38px 20px rgba(41,41,41,0.65);
+  @media (max-width: 768px) {
+    text-align: left;
+  }
 }
-
 
 .projects-body{
   font-family: 'David Libre', serif;
   padding: 50px 100px 15px 100px;
   color: black !important;
   text-align: center;
+  @media (max-width: 768px) {
+    padding: 50px 50px 15px 50px;
+  }
   //box-shadow: 0px 0px 38px 20px rgba(41,41,41,0.65);
 }
 
@@ -154,11 +139,16 @@ a:active, a:focus, a:visited {
    }
  }
 
- .blah{
-  //  position: relative !important;
-  //  top: 50% !important;
-  // transform: translateY(-50%) !important;
-  line-height: 64px;
+ .npm-image-large{
+   @media (max-width: 900px) {
+     display:none;
+   }
+ }
+
+ .npm-image-small{
+   @media (min-width: 900px) {
+     display:none;
+   }
  }
 
 .jumbo-header{
