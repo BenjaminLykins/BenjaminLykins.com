@@ -1,3 +1,14 @@
+// // Material Design Icons
+// @import url("//fonts.googleapis.com/icon?family=Material+Icons");
+
+//Bootstrap
+// @import "//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+//
+// //Font Awesome
+// @import "media/font-awesome-4.6.3/css/font-awesome.min.css";
+// @import "https://fonts.googleapis.com/css?family=Open+Sans";
+// @import "https://fonts.googleapis.com/css?family=David+Libre|Pinyon+Script";
+
 
 @darkPrimaryColor:   #616161;
 @primaryColor:       #9E9E9E;
@@ -33,9 +44,11 @@ body {
   color: @lightPrimaryColor;
   font-family: 'Open Sans', sans-serif;
 }
-
+a{
+  color: #2A5DB0 !important;
+}
 a:hover{
-  color: @lightPrimaryColor !important;
+  color: #4E8BED !important;
   text-decoration: none;
 }
 
@@ -81,8 +94,8 @@ a:active, a:focus, a:visited {
 }
 
 .row-1{
-  background-image: url(Media/Images/pexels-photo-96426.jpg);
-  height:100vh;
+  background-image: url(media/Images/pexels-photo-96426.jpg);
+  min-height:100vh;
   background-position: right top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -96,27 +109,56 @@ a:active, a:focus, a:visited {
   box-shadow: 0px 0px 38px 20px rgba(41,41,41,0.65);
 }
 
-.row-2{
-  background-image: url(Media/Images/apple-iphone-desk-office.jpg);
-  background-position: right top;
+
+.projects-body{
+  font-family: 'David Libre', serif;
+  padding: 50px 100px 15px 100px;
+  color: black !important;
+  text-align: center;
+  //box-shadow: 0px 0px 38px 20px rgba(41,41,41,0.65);
+}
+
+.projects-header{
+  background-image: url(media/Images/apple-iphone-desk-office.jpg);
+  background-position: right center;
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0px 0px 38px 20px rgba(41,41,41,0.65);
 }
 
-.row-3{
-  background-image: url(Media/Images/pexels-photo-59672.jpg);
-  background-position: right top;
+.contact-header{
+  background-image: url(media/Images/pexels-photo-59672.jpg);
+  background-position: right center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 0px -5px 18px 1px rgba(41,41,41,0.65);
+  box-shadow: 0px 0px 38px 20px rgba(41,41,41,0.65);
 }
-
  .hr-custom
  {
    border: 0;
    height: 3px;
    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+ }
+
+ .github-logo-light{
+   padding: 0px;
+   @media (max-width: 768px) {
+     display:none;
+   }
+ }
+
+ .github-logo-dark{
+   padding: 0px;
+   @media (min-width: 768px) {
+     display:none;
+   }
+ }
+
+ .blah{
+  //  position: relative !important;
+  //  top: 50% !important;
+  // transform: translateY(-50%) !important;
+  line-height: 64px;
  }
 
 .jumbo-header{
@@ -135,8 +177,9 @@ a:active, a:focus, a:visited {
   font-size: 16px;
   box-shadow: 0px -5px 18px 1px rgba(41,41,41,0.65);
   background-color: #FAFAFA;
-  color: #B0B0B0;
+  color:  #333333;
 }
+
 
 .custom-navbar {
   margin: 0px;
@@ -145,8 +188,8 @@ a:active, a:focus, a:visited {
   border: none;
   width: 100%;
   background-color: transparent;
-  z-index: 1;
-  position: fixed
+  z-index: 2;
+  position: absolute;
 }
 
 .navbar-brand {

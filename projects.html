@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Projects - Benjamin Lykins</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- jquery -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Shortcut Icon -->
+  <link rel="shortcut icon" type="image/x-icon" href="media/ic_home_black_24dp_2x.ico" />
+
+  <!-- Material Design icons-->
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="media/font-awesome-4.6.3/css/font-awesome.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=David+Libre|Pinyon+Script" rel="stylesheet">
+  <!-- Custom Style -->
+  <link href="style.css" rel="stylesheet">
+
+  <script>
+  // Include the header and footer into content
+  $(function(){
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+  });
+  </script>
+
+</head>
+
+<div id="header"></div>
+
+<div class="container-fluid projects-header">
+  <div class="row" style="padding: 100px 0px 100px 0px;">
+    <div class="col-md-6 col-md-offset-3 col-sm-12">
+      <h1 class="jumbo-header">Take a look at what I've worked on.</h1>
+    </div>
+  </div>
+</div>
+
+<div class="projects-body container-fluid">
+  <h2 style="font-family: 'Open Sans', sans-serif;">
+    npm command-line-argument &middot; August 2016
+  </h2>
+  <p>As part of a personal project to learn about npm and Node, I created a public
+    npm package that would take command line arguments and serialize them as objects in JavaScript.</p>
+  <p>I learned how to write automated tests with code coverage in mind and use external
+    tools such as Travis CI for continuous integration and Coveralls for code coverage.
+    I also strengthened my JavaScript knowledge by writing a recursive algorithm that would
+    parse the command line arguments and return a JavaScript object.
+  </p>
+  <p> <a href="https://www.npmjs.com/package/command-line-arguments">npmjs.com/package/command-line-arguments</a></p>
+  <br>
+  <img src="media/npmproject.png" class="img-fluid" alt="Command-line-arguments" style="width: 100%">
+</div>
+
+<hr class="hr-custom">
+
+<div class="container-fluid projects-body" style="padding-top: 25px">
+  <h2 style="font-family: 'Open Sans', sans-serif;">
+    The Minimalist Bible (beta) &middot; July 2016 - Present
+  </h2>
+  <p>This is an ongoing project that has been in the works that I continue to update.
+    The reason I created The Minimalist Bible was to provide a simpler and more visually appealing
+    way to read The Bible online compared to other popular Bible reaidng websites.</p>
+  <p>The website is a single-page application using AngularJS and Bootstrap. It makes http requests to an
+    external API to get the reading material. It was a valuable expiernece creating
+    my own single-page application from scratch, and learning how to manage the MVC nature
+    of AngularJS.</p>
+  <p>There is still a lot of work that needs to be done and I will not begin publizing the
+    application until I feel like it is ready and up to my standards.
+  </p>
+  <p> <a href="https://www.theminimalistbible.com/">theminimalistbible.com</a></p>
+  <br>
+  <img src="media/theminimalistbibleproject.png" class="img-fluid" alt="The Minimalist Bible" style="width: 100%; padding-bottom: 30px">
+</div>
+
+<hr class="hr-custom">
+
+<div class="container-fluid projects-body" style="padding-top: 25px">
+  <h2 style="font-family: 'Open Sans', sans-serif;">
+    Code Coverage Undergraduate Research Project &middot; November 2014
+  </h2>
+  <p>As part of my undergraduate research, I created a Python script that would take
+    a file (termed the target), compare it to a folder containing other files to
+    compare it to (termed the corpus folder) and create a basic HTML file that would
+    contain the exact text of the target file with the sequences that had been repeated
+    in the corpus highlighted.</p>
+  <p>The primary purpose was researching how much of a program could be created
+    by copying long sequences of words (termed tokens) in other programs. If we
+    gain a better understanding of this, it may be possible to create programming
+    languages that reduce redundancy of tokens between similar programs.
+    A secondary purpose could comparing students' code to each other to see
+    if they may have copied code from another student in a class.</p>
+  <p> <a href="https://github.com/BenjaminLykins/code-coverage">github.com/BenjaminLykins/code-coverage</a></p>
+  <br>
+  <!-- <img src="" class="img-fluid" alt="" style="width: 100%; padding-bottom: 30px"> -->
+</div>
+
+
+<div id="footer"></div>
